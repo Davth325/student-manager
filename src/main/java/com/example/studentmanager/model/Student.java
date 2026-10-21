@@ -1,9 +1,13 @@
 package com.example.studentmanager.model;
 
+import com.example.studentmanager.annotation.NotEmpty;
+
 import java.util.Objects;
 
 public class Student {
+    @NotEmpty
     private final String id;
+    @NotEmpty
     private String name;
     private int age;
     private double gpa;
