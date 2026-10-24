@@ -13,7 +13,7 @@ public class StudentRepository {
         studentById.put(student.getId(), student);
     }
 
-    public Optional findById(String id) {
+    public Optional<Student> findById(String id) {
         return Optional.ofNullable(studentById.get(id));
     }
 
